@@ -1,0 +1,31 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    
+    <div class="container">
+            <div class="titulo">
+                <h4>Calculadora do índice de Massa Corporal (IMC)</h4>
+            </div>
+                <div class="inputs">
+                    Altura(M): <input type="number" id="h"/>
+                </div>
+                <div class="inputs">
+                    Peso(Kg): <input type="number" id="p"/>
+                </div>
+        <div>
+            <button type="submit" onclick="calcularimc()">Calcular IMC</button>
+        </div>
+        <div class="resultado">
+            <div id="resultado"></div>
+        </div>
+        <div class="classe">
+            <div id="classe"></div>
+        </div>
+    </div>
+        <div onmouseover="porCima(this)" onmouseout="porFora(this)"
+   style=" width:77px; height:20px;" id="ptabela">Tabela IMC</div>
+    <script src="script.js"></script>
+</body>
+</html>
